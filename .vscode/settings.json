@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "thread": "cpp",
+        "regex": "cpp",
+        "fstream": "cpp",
+        "memory": "cpp",
+        "array": "cpp",
+        "functional": "cpp",
+        "future": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp"
+    }
+}

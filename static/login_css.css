@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(135deg, #ddd0c8, #ddd1cc);
+    color: #1b2358;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    max-height:auto;
+    margin: auto;
+    background: #ddd0c8;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1.5px solid #252525;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+label {
+    display: block;
+    color : #252525;
+    margin-bottom: 15px;
+}
+input[type="text"],
+input[type="password"],
+input[type = "tel"] {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+button:hover {
+    background: #4338ca;
+    box-shadow: 0 5px 20px rgba(67, 56, 202, 0.7);
+    color: white;
+    text-decoration: none;
+}
+
+button:active{
+    background-color: #cccccc;
+    border: 2px solid #000;
+    transform: translateY(2px);
+    color: black;
+}
+
+select{
+    width: 100%;
+    color:#000;
+    height: 15%;
+    background-color: white;
+}

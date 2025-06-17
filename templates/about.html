@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us - Smart Appointment System</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #ddd0c8, #ddd1cc);
+            color: #1b2358;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn-back {
+            margin-top: 20px;
+            background: #2563eb;
+            border-color: #2563eb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn-back:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Us</h1>
+    <p>
+        Welcome to the Smart Appointment System! We are dedicated to providing a seamless and efficient way to manage appointments for both customers and employees.
+    </p>
+    <p>
+        Our platform allows users to easily book, view, and cancel appointments with their preferred service providers. We aim to enhance the user experience by simplifying the appointment scheduling process.
+    </p>
+    <p>
+        Our team is committed to continuous improvement and innovation, ensuring that our users have the best tools at their disposal for managing their time effectively.
+    </p>
+    <p>
+        Thank you for choosing our service. We look forward to serving you!
+    </p>
+    <a href="{{ url_for('home') }}" class="btn-back">&larr; Back to Home</a>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4Cyv+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRk"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4/JqsAxGlUSTldvU8mNWYtYWKwO+5+RTtE3JBYR+jpaQ1FxRn6CKX7wLY"
+            crossorigin="anonymous"></script>
+</body>
+</html>

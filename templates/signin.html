@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login_css.css') }}">
+        
+</head>
+<body>
+    <center>
+    <h2> Sign In </h2>
+    {% with messages = get_flashed_messages(with_categories=true)%}
+        {% if messages%}
+            {% for category, message in messages %}
+                <div class = "aler alert-{{category}}">
+                    {{message}}
+                </div>
+            {% endfor%}
+        {% endif%}
+    {% endwith%}
+    <center>
+    <form action="{{url_for('signin')}}" method="post">
+
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder = "username" required ><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="password2">Retype Password:</label><br>
+        <input type="password" id="password2" name="password2" required><br><br>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required ><br><br>
+        <label for="phon">Phone Number:</label><br><br>
+        <input type="tel" id="phon" name="phon"  required ><br><br>
+        <label> Register as Employee/Customer</labe><br><br>
+        <select name = "dropdown", id='dropdown'>
+            <option value = "none" selected disabled hidden>Select an option</option>
+            <option value = "Customer">Customer</option>
+            <option value = "Employee">Employee</option>
+
+            </select>   
+        <br><br>
+        <label for="position" style = "display:none", id = "lpos">Job position - if employee:</label>
+        <input type="text" id="position" name="position" style= "display:none;">
+
+            <br><br>
+        <button type="submit" >Login</button>
+    </form>
+    <script src="{{url_for('static', filename='signin.js')}}"></script>
+
+</body>
+</html>
